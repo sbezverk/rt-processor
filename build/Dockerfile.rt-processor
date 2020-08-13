@@ -1,0 +1,5 @@
+FROM scratch
+
+ADD ./testdata/ /testdata
+COPY ./bin/vrf-processor /vrf-processor
+ENTRYPOINT ["/vrf-processor"]
